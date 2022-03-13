@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ykondo <ykondo@student.42tokyo.jp>         +#+  +:+       +#+        */
+/*   By: yukikondo <yukikondo@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/31 20:24:07 by ykondo            #+#    #+#             */
-/*   Updated: 2021/10/31 20:24:07 by ykondo           ###   ########.fr       */
+/*   Updated: 2022/03/13 15:01:42 by yukikondo        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #ifndef LIBFT_H
@@ -57,4 +57,11 @@ void	*ft_memmove(void *dst, const void *src, size_t len);
 void	*ft_memset(void *b, int c, size_t len);
 void	*ft_calloc(size_t count, size_t size);
 char	**ft_split(char const *s, char c);
+int		ft_printf(const char *fmt, ...);
+size_t	ft_putchar_len(int c);
+size_t	ft_putaddress_len(unsigned long long c);
+size_t	ft_putnbr_len(long long int nb);
+size_t	ft_putstr_len(char *str);
+size_t	ft_putnbr_convert_base(unsigned long long nb, char *base);
+
 #endif
