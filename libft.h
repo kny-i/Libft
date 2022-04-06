@@ -18,6 +18,8 @@
 # include <stdio.h>
 # include <libc.h>
 
+# define NEVER_EDITED -1
+
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 void	*ft_memcpy(void *dst, const void *src, size_t n);
 void	ft_bzero(void *s, size_t n);
@@ -63,5 +65,4 @@ size_t	ft_putaddress_len(unsigned long long c);
 size_t	ft_putnbr_len(long long int nb);
 size_t	ft_putstr_len(char *str);
 size_t	ft_putnbr_convert_base(unsigned long long nb, char *base);
-
 #endif
