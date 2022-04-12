@@ -13,7 +13,7 @@
 
 int	ft_atoi(const char *str)
 {
-	size_t		neg;
+	int			neg;
 	size_t		i;
 	long long	num;
 
